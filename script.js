@@ -12,5 +12,19 @@ cardContainer.addEventListener("click", function (event) {
     console.log(id);
   }
 
- 
+  // Call Button Functionality
+  if (event.target.classList.contains("call-btn")) {
+    const heartCount = document.getElementById("heart-count");
+    if (parseInt(heartCount.innerText) >= 20) {
+      // Show an alert with a message including the service name and number
+      const card = event.target.parentElement.parentElement;
+      const service = card.querySelector("#heading");
+      const number = card.querySelector("#call");
+      confirm(`Service: ${service.innerText};  Call: ${number.innerText}`);
+      const currentConi = parseInt(heartCount.innerText) - 20;
+      heartCount.textContent = currentConi;
+    } else {
+      alert("Your coins are less than 20. Recharge coins.");
+    }
+  }
 });
