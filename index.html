@@ -52,7 +52,9 @@
           <div
             class="flex justify-center items-center gap-2 bg-lightGreen px-5 py-2 rounded-full"
           >
-            <span class="text-md font-semibold text-darkColor">0</span>
+            <span id="heart-count" class="text-md font-semibold text-darkColor"
+              >50</span
+            >
             <img class="w-6 h-6" src="/assets/heart.png" alt="" />
           </div>
           <!-- Coin Div -->
@@ -88,10 +90,12 @@
       <section class="w-11/12 mx-auto flex flex-col lg:flex-row gap-6">
         <!-- Card Container -->
         <div
+          id="card-container"
           class="w-full lg:w-9/12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"
         >
           <!-- Card one -->
           <div class="bg-white w-full p-5 rounded-lg space-y-2">
+            
             <div class="flex justify-between items-center">
               <img
                 class="bg-[#FFE3E2] p-2 w-12 h-12 rounded-lg"
@@ -99,12 +103,15 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-one"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">National Emergency Number</h3>
+            <h3 id="heading" class="text-lg font-bold">
+              National Emergency Number
+            </h3>
             <p class="text-base text-grayColor">National Emergency</p>
-            <h6 class="text-xl font-extrabold">999</h6>
+            <h6 id="call" class="text-xl font-extrabold">999</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -117,7 +124,7 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -132,12 +139,15 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-two"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Police Helpline Number</h3>
+            <h3 id="heading" class="text-lg font-bold">
+              Police Helpline Number
+            </h3>
             <p class="text-base text-grayColor">Police</p>
-            <h6 class="text-xl font-extrabold">16430</h6>
+            <h6 id="call" class="text-xl font-extrabold">16430</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -150,14 +160,14 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <!-- Card three -->
-          <div class="bg-white w-full p-5 rounded-lg space-y-2">
+          <div id="card" class="bg-white w-full p-5 rounded-lg space-y-2">
             <div class="flex justify-between items-center">
               <img
                 class="bg-[#FFE3E2] p-2 w-12 h-12 rounded-lg"
@@ -165,12 +175,13 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-three"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Fire Service Number</h3>
+            <h3 id="heading" class="text-lg font-bold">Fire Service Number</h3>
             <p class="text-base text-grayColor">Fire Service</p>
-            <h6 class="text-xl font-extrabold">102</h6>
+            <h6 id="call" class="text-xl font-extrabold">102</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -183,7 +194,7 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -198,12 +209,13 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-four"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Ambulance Service</h3>
+            <h3 id="heading" class="text-lg font-bold">Ambulance Service</h3>
             <p class="text-base text-grayColor">Ambulance</p>
-            <h6 class="text-xl font-extrabold">1994-999999</h6>
+            <h6 id="call" class="text-xl font-extrabold">1994-999999</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -216,7 +228,7 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -231,12 +243,15 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-five"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Women & Child Helpline</h3>
+            <h3 id="heading" class="text-lg font-bold">
+              Women & Child Helpline
+            </h3>
             <p class="text-base text-grayColor">Women & Child Helpline</p>
-            <h6 class="text-xl font-extrabold">109</h6>
+            <h6 id="call" class="text-xl font-extrabold">109</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -249,7 +264,7 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -264,12 +279,15 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-six"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Anti-Corruption Helpline</h3>
+            <h3 id="heading" class="text-lg font-bold">
+              Anti-Corruption Helpline
+            </h3>
             <p class="text-base text-grayColor">Anti-Corruption</p>
-            <h6 class="text-xl font-extrabold">106</h6>
+            <h6 id="call" class="text-xl font-extrabold">106</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -282,7 +300,7 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -298,12 +316,13 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-seven"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Electricity Helpline</h3>
+            <h3 id="heading" class="text-lg font-bold">Electricity Helpline</h3>
             <p class="text-base text-grayColor">Electricity Outage</p>
-            <h6 class="text-xl font-extrabold">16216</h6>
+            <h6 id="call" class="text-xl font-extrabold">16216</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -316,7 +335,7 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -332,12 +351,13 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-eight"
+                class="heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Brac Helpline</h3>
+            <h3 id="heading" class="text-lg font-bold">Brac Helpline</h3>
             <p class="text-base text-grayColor">Brac</p>
-            <h6 class="text-xl font-extrabold">16445</h6>
+            <h6 id="call" class="text-xl font-extrabold">16445</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -350,14 +370,14 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
 
-          <!-- Card nin -->
+          <!-- Card nine -->
           <div class="bg-white w-full p-5 rounded-lg space-y-2">
             <div class="flex justify-between items-center">
               <img
@@ -366,12 +386,13 @@
                 alt=""
               />
               <i
-                class="text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
+                id="heart-btn-nine"
+                class="heart-btn heart-btn text-2xl cursor-pointer text-gray-500 fa-regular fa-heart"
               ></i>
             </div>
-            <h3 class="text-lg font-bold">Bangladesh Railway</h3>
+            <h3 id="heading" class="text-lg font-bold">Bangladesh Railway</h3>
             <p class="text-base text-grayColor">Bangladesh Railway</p>
-            <h6 class="text-xl font-extrabold">163</h6>
+            <h6 id="call" class="text-xl font-extrabold">163</h6>
             <button
               class="bg-[#F2F2F2] text-grayColor px-5 rounded-3xl cursor-pointer mb-3"
             >
@@ -384,7 +405,7 @@
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
+                class="call-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg bg-greenColor text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -406,30 +427,35 @@
           <!-- History Service container -->
           <div>
             <!-- History 1 -->
-            <div class="bg-[#f4f1f1] p-3 mt-4 rounded-lg flex justify-between items-center">
-            <div>
-              <h6 class="font-semibold text-md">Fire Service Number</h6>
-              <p class="text-grayColor">999</p>
+            <div
+              class="bg-[#f4f1f1] p-3 mt-4 rounded-lg flex justify-between items-center"
+            >
+              <div>
+                <h6 class="font-semibold text-md">Fire Service Number</h6>
+                <p class="text-grayColor">999</p>
+              </div>
+              <div>
+                <p>11:36:58 AM</p>
+              </div>
             </div>
-            <div>
-              <p>11:36:58 AM</p>
-            </div>
-          </div>
 
             <!-- History 2 -->
-            <div class="bg-[#f4f1f1] p-3 mt-4 rounded-lg flex justify-between items-center">
-            <div>
-              <h6 class="font-semibold text-md">Fire Service Number</h6>
-              <p class="text-grayColor">999</p>
+            <div
+              class="bg-[#f4f1f1] p-3 mt-4 rounded-lg flex justify-between items-center"
+            >
+              <div>
+                <h6 class="font-semibold text-md">Fire Service Number</h6>
+                <p class="text-grayColor">999</p>
+              </div>
+              <div>
+                <p class="text-sm">11:36:58 AM</p>
+              </div>
             </div>
-            <div>
-              <p class="text-sm">11:36:58 AM</p>
-            </div>
-          </div>
           </div>
         </aside>
       </section>
     </main>
+    <script src="/utils.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
