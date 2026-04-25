@@ -68,7 +68,7 @@
           <div
             class="flex justify-center items-center gap-2 bg-greenColor px-5 py-2 rounded-full"
           >
-            <p class="text-base font-medium text-white"><span>2</span> Copy</p>
+            <p class="text-base font-medium text-white"><span id="copy-count">2</span> Copy</p>
           </div>
         </div>
       </nav>
@@ -95,7 +95,6 @@
         >
           <!-- Card one -->
           <div class="bg-white w-full p-5 rounded-lg space-y-2">
-            
             <div class="flex justify-between items-center">
               <img
                 class="bg-[#FFE3E2] p-2 w-12 h-12 rounded-lg"
@@ -118,7 +117,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -153,7 +152,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -186,7 +185,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -219,7 +218,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -254,7 +253,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -289,7 +288,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -323,7 +322,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -357,7 +356,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -391,7 +390,7 @@
             </button>
             <div class="flex justify-center items-center gap-3">
               <button
-                class="w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
+                class="copy-btn w-full border border-gray-400 py-1 cursor-pointer rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
@@ -410,38 +409,15 @@
               <i class="pr-1 fa-regular fa-clock"></i> <span>Call History</span>
             </p>
             <button
+              id="clear-btn"
               class="text-white text-sm bg-greenColor px-6 py-2 rounded-full cursor-pointer"
             >
               Clear
             </button>
           </div>
           <!-- History Service container -->
-          <div>
-            <!-- History 1 -->
-            <div
-              class="bg-[#f4f1f1] p-3 mt-4 rounded-lg flex justify-between items-center"
-            >
-              <div>
-                <h6 class="font-semibold text-md">Fire Service Number</h6>
-                <p class="text-grayColor">999</p>
-              </div>
-              <div>
-                <p>11:36:58 AM</p>
-              </div>
-            </div>
-
-            <!-- History 2 -->
-            <div
-              class="bg-[#f4f1f1] p-3 mt-4 rounded-lg flex justify-between items-center"
-            >
-              <div>
-                <h6 class="font-semibold text-md">Fire Service Number</h6>
-                <p class="text-grayColor">999</p>
-              </div>
-              <div>
-                <p class="text-sm">11:36:58 AM</p>
-              </div>
-            </div>
+          <div id="call-history-container">
+            <!-- Call History List -->
           </div>
         </aside>
       </section>

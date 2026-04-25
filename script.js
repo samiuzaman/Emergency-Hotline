@@ -21,8 +21,27 @@ cardContainer.addEventListener("click", function (event) {
       confirm(`Service: ${service.innerText};  Call: ${number.innerText}`);
       const currentConi = parseInt(heartCount.innerText) - 20;
       heartCount.textContent = currentConi;
+
+      // Display Call History
+      callHistory(service, number);
     } else {
       alert("Your coins are less than 20. Recharge coins.");
     }
   }
+
+  // Copy Button Functionality
+  if (event.target.classList.contains("copy-btn")) {
+    const container = event.target.parentElement.parentElement;
+    const callEl = container.querySelector("#call").innerText;
+    window.navigator.clipboard.writeText(callEl);
+    const copyCount = document.getElementById("copy-count");
+    copyCount.innerText = parseInt(copyCount.innerText) + 1;
+    alert("Copied successfully!");
+  }
+});
+
+// History Clear Button Functionality
+document.getElementById("clear-btn").addEventListener("click", function () {
+  const historyContainer = document.getElementById("call-history-container");
+  historyContainer.innerText = "";
 });
